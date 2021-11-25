@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --main-text-color: #d4b55c;
+  --main-transition: 0.3s ease-in-out;
 }
 * {
   margin: 0px;
@@ -9,6 +10,7 @@
 }
 a {
   text-decoration: none;
+  text-transform: uppercase;
 }
 li {
   list-style: none;
@@ -32,9 +34,9 @@ button a {
 .container {
   max-width: 1200px;
   height: auto;
-  background: green;
   margin: 0 auto;
 }
+
 /**===================Header=========================**/
 .header {
   height: 80px;
@@ -84,8 +86,15 @@ button a {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
-
+.button:hover {
+  background: rgb(8, 103, 236);
+}
 /**===================Hero-Section======================**/
 .hero__section {
   height: 100vh;
@@ -134,8 +143,15 @@ button a {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
 }
-
+.content__button:hover {
+  background: rgb(8, 103, 236);
+}
 /**===================About__Area======================**/
 .about__area {
   height: 100vh;
@@ -160,8 +176,8 @@ button a {
   width: 100%;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.46094187675070024) 10%,
-    rgba(10, 105, 235, 0.2214460784313726) 100%
+    rgba(0, 0, 0, 0.25) 10%,
+    rgba(10, 105, 235, 0.22) 100%
   );
 }
 .about__img {
@@ -175,7 +191,7 @@ button a {
   padding: 0px 130px 0px 0px;
   line-height: 25px;
   color: var(--main-text-color);
-  z-index: 99;
+  z-index: 1;
 }
 .about__span {
   font-size: 17px;
@@ -211,7 +227,250 @@ button a {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  transition: var(--main-transition);
+}
+.about__content__button:hover {
+  background: #f5ba09f5;
 }
 
-/**===================Header===========================**/
+/**===================Demo Area===========================**/
+.demos__area {
+  height: auto;
+  width: 100%;
+  padding: 100px 0;
+  background: radial-gradient(
+    circle,
+    rgba(6, 18, 26, 0.904) 0%,
+    rgb(16, 23, 32) 100%
+  );
+  position: relative;
+}
+.demos__area::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 10%,
+    rgba(10, 105, 235, 0.22) 100%
+  );
+}
+.demos__area__top__content {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: var(--main-text-color);
+  z-index: 1;
+  text-align: center;
+}
+.demos__area__top__content__icon {
+  position: relative;
+}
+.demos__area__top__content__icon::before,
+.demos__area__top__content__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 120%;
+  width: 80px;
+  height: 3px;
+  background: var(--main-text-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.demos__area__top__content__icon::after {
+  left: 120%;
+}
+.demos__warper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demos__content {
+  padding: 100px 0;
+  width: 30%;
+  height: auto;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 1;
+}
+.demos__content__h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.demos__content__p {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.demos__content__button {
+  height: 45px;
+  width: 250px;
+  margin-top: 5px;
+  margin-right: 10px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 50px;
+  background: #d4b65cb9;
+  background-attachment: blur(10px);
+  cursor: pointer;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.demos__content__button:hover {
+  background: #f1b605df;
+}
+
+/*-------Card------*/
+.demos__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.demos__card__warper {
+  height: 350px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+}
+.demos__card__warper::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.demos__card {
+  height: 100%;
+  width: 100%;
+  background: url(./img/Demos/img-2.jpg) center center;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+
+.demos__card__warper:nth-child(2) .demos__card {
+  background: url(./img/Demos/img-2.jpg) center center;
+  background-size: cover;
+}
+.demos__card__warper:nth-child(3) .demos__card {
+  background: url(./img/Demos/img-2.jpg) center center;
+  background-size: cover;
+}
+.demos__card__warper:nth-child(4) .demos__card {
+  background: url(./img/Demos/img-2.jpg) center center;
+  background-size: cover;
+}
+.demos__card__warper:nth-child(5) .demos__card {
+  background: url(./img/Demos/img-2.jpg) center center;
+  background-size: cover;
+}
+.demos__card__warper:nth-child(6) .demos__card {
+  background: url(./img/Demos/img-2.jpg) center center;
+  background-size: cover;
+}
+.demos__card__top__icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: var(--main-transition);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.demos__card__icon {
+  cursor: pointer !important;
+  font-size: 30px;
+  margin: 0 5px;
+}
+.material__icons__add {
+  background: rgba(122, 124, 126, 0.541);
+}
+.demos__card__bottom__icon {
+  position: absolute;
+  padding: 0 5px;
+  width: 100%;
+  bottom: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: var(--main-transition);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.demos__card__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.demos__card__profile__img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-right: 5px;
+}
+.demos__card__warper:hover .demos__card__bottom__icon,
+.demos__card__warper:hover .demos__card__top__icon,
+.demos__card__warper:hover::before {
+  opacity: 1;
+  transform: translatey(0px);
+  -webkit-transform: translatey(0px);
+  -moz-transform: translatey(0px);
+  -ms-transform: translatey(0px);
+  -o-transform: translatey(0px);
+}
 /**===================Header===========================**/
