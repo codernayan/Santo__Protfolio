@@ -485,7 +485,7 @@ button a {
 /**===================Technology--Area===========================**/
 
 .technology__area {
-  height: 100vh;
+  height: auto;
   width: 100%;
   padding: 100px 0;
   background: radial-gradient(
@@ -599,4 +599,102 @@ button a {
 .technology__card__content {
   position: relative;
   top: 20px;
+}
+/**===================Contact--Area=========================**/
+.contact__area {
+  height: auto;
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(6, 18, 26, 0.904) 0%,
+    rgb(16, 23, 32) 100%
+  );
+  padding: 100px 0px;
+  position: relative;
+  box-sizing: border-box;
+}
+.contact__warper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(29, 98, 226);
+  height: 350px;
+  color: #fff;
+}
+.contact__span {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.contact__span:nth-child(4) {
+  position: relative;
+  left: 27px;
+  margin-bottom: -25px;
+}
+.contact__right {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  background-attachment: blur(10px);
+}
+.contact__input__warper {
+  width: 80%;
+}
+.contact__input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: rgb(29, 98, 226);
+  font-weight: 600;
+  font-size: 16px;
+}
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+  color: rgb(30, 32, 36);
+  font-weight: 600;
+}
+.contact__textarea {
+  display: block;
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: 0px 0px 15px 0px;
+  color: rgb(29, 98, 226);
+  font-weight: 600;
+  font-size: 16px;
+}
+.contact__button {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: rgb(29, 98, 226);
+}
+/**===================Footer--Area=========================**/
+.footer__area {
+  height: auto;
+  width: 100%;
+  padding: 50px 0px;
 }
