@@ -303,6 +303,12 @@ button a {
 .about__content__button:hover {
   background: #f5ba09f5;
 }
+.demos__content__button__a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 14px 0;
+}
 
 /**===================Demo Area===========================**/
 .demos__area {
@@ -366,11 +372,17 @@ button a {
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
+  text-align: center;
 }
 .demos__content__button:hover {
   background: #f1b605df;
 }
-
+.demos__content__button__a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 14px 0;
+}
 /*-------Card------*/
 .demos__cards {
   display: flex;
@@ -666,8 +678,10 @@ button a {
 }
 .contact__input__warper {
   width: 80%;
+  position: relative;
 }
 .contact__input {
+  position: relative;
   display: block;
   height: 50px;
   width: 100%;
@@ -681,6 +695,8 @@ button a {
   color: rgb(29, 98, 226);
   font-weight: 600;
   font-size: 16px;
+  outline: none;
+  border: none;
 }
 .contact__input::placeholder,
 .contact__textarea::placeholder {
@@ -697,6 +713,8 @@ button a {
   color: rgb(29, 98, 226);
   font-weight: 600;
   font-size: 16px;
+  outline: none;
+  border: none;
 }
 .contact__button {
   height: 50px;
@@ -707,6 +725,13 @@ button a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   background: rgb(29, 98, 226);
+  cursor: pointer;
+}
+.contact__button__a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 14px 0;
 }
 /**===================Footer--Area=========================**/
 .footer__area {
