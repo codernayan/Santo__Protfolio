@@ -41,6 +41,7 @@ button a {
   max-width: 1200px;
   height: auto;
   margin: 0 auto;
+  padding: 0px 10px;
 }
 /*---------Area-Top-Content------- */
 .area__top__content {
@@ -114,7 +115,7 @@ button a {
   height: 4px;
   width: 140%;
   background: rgb(0, 89, 255);
-  left: -10px;
+  left: -13px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -125,7 +126,7 @@ button a {
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
   -o-transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: center;
   transition: 0.4s linear;
   -webkit-transition: 0.4s linear;
   -moz-transition: 0.4s linear;
@@ -200,6 +201,7 @@ button a {
 .content {
   position: relative;
   margin-left: 30px;
+  width: 50%;
 }
 .content__h1 {
   font-size: 40px;
@@ -240,16 +242,26 @@ button a {
 .content__button:hover {
   background: rgb(8, 103, 236);
 }
+.hero__section__illustration {
+  width: 50%;
+}
+.hero__section__illustration__img {
+  width: 100%;
+  object-fit: cover;
+}
 /**===================About__Area======================**/
 .about__area {
-  height: 100vh;
+  height: auto;
   width: 100%;
+  padding: 100px 0;
   background: transparent;
+  position: relative;
+  color: #fff;
+}
+.about__area__warper {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  color: #fff;
 }
 .about__img {
   width: 50%;
